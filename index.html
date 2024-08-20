@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Encriptador de texto</title>
+</head>
+<body>
+    <header class="header">
+    <img class="imagen_logo" src="./assets/Logo.png" alt="imagen Logo">
+
+    </header>
+    <main>
+        <section class="encripta">
+            <textarea class="area_texto" autocomplete="off" cols="30" rows="10" placeholder="Ingrese texto aquí"></textarea>
+                <div>
+                    <p class="advertencia"><i class="fas fa-exclamation-circle"></i> Solo letras minúsculas sin acentos.</p>
+                </div>
+            <div class="botones">
+            <button class="boton_encriptar" onclick="btnEncriptar()">Encriptar</button>
+            <button class="boton_desencriptar" onclick="btnDesencriptar()" id="">Desencriptar</button>
+             </div>
+        </section>
+        
+        <section class="desencripta">
+            <div class="encriptado"> 
+            <textarea class="mensaje"  autocomplete="off" readonly cols="20" rows="10"></textarea>
+            <span id="frase_muñeco" class="frase_muñeco"> Ningun mensaje fue encontrado </span> 
+        </div>
+            <div> <button class="boton_copiar" onclick="btnCopiar()" id=""> Copiar </button> </div>
+
+        </section>
+    </main>
+    <footer class="footer">
+        <p> Desarrollado por José Hernández </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
